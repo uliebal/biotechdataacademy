@@ -1,5 +1,5 @@
 ---
-title: "BiotechDataAcademy"
+title: "BiotechData.Academy"
 meta_title: "Dr. Ulf Liebal"
 description: "this is meta description"
 image: "images/tst1.png"

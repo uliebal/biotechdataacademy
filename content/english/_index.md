@@ -1,17 +1,17 @@
 ---
 # Banner
 banner:
-  title: "BiotechDataAcademy <br /> Innovation in Data Analysis"
-  content: "At **BiotechDataAcademy** we develop realistic and precise models of biotechnological processes. These models simulate complex experiments to speed up data analysis, test analysis workflows and improve data managment."
+  title: "BiotechData.Academy <br /> Innovation in Data Analysis"
+  content: "At **BiotechData.Academy** we develop realistic and precise models of biotechnological processes. These models simulate complex experiments to speed up data analysis, test analysis workflows and improve data managment."
   image: "/images/Icon_Bug-IC-Plot.png"
   button:
-    enable: true
+    enable: false
     label: "Get in Contact"
     link: "https://github.com/zeon-studio/hugoplate"
 
 # Features
 features:
-  - title: "Get the Skills for Advanced Biotech Data Analysis"
+  - title: "Advance Your Skills for Effective Biotech Data Analysis"
     image: "/images/Icon_WomenCompBioExp.png"
     content: "We teach data analysis of various biotechnological experiments and analytical devices with realistic hands-on data from simulated experiments."
     bulletpoints:
@@ -26,13 +26,13 @@ features:
 
   - title: "Improve your Data Managment with Realistic Data"
     image: "/images/Icon_RDM-FermenterDataWorker.png"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
+    content: "At **BiotechData.Academy** we developed a digital biotech lab to simulate different experiments and analytical instruments. You can simulate as many experiments and data sets as you need to be confident of your laboratory and data managment software solution."
     bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+      - Basic biomass, substrate and product concentration measurements.
+      - HPLC and Metabolomics analytics data.
+      - Data from metabolic flux analysis with isotope label and flux balance analysis from metabolic models.
     button:
-      enable: true
+      enable: false
       label: "Get Started Now"
       link: "https://github.com/zeon-studio/hugoplate"
 

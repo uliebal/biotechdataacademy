@@ -1,7 +1,7 @@
 ---
-title: John Doe
-email: johndoe@email.com
-image: "/images/avatar.png"
+title: Dr.-Ing. Ulf Liebal
+email: Contact@biotechdata.academy
+image: "/images/Photo_Ulf.png"
 description: this is meta description
 social:
   - name: github
