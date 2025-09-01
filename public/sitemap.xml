@@ -62,7 +62,7 @@
   </url><url>
     <loc>//localhost:1313/contact/</loc>
   </url><url>
-    <loc>//localhost:1313/authors/john-doe/</loc>
+    <loc>//localhost:1313/authors/ulf-liebal/</loc>
   </url><url>
     <loc>//localhost:1313/elements/</loc>
   </url><url>
@@ -70,10 +70,6 @@
   </url><url>
     <loc>//localhost:1313/privacy-policy/</loc>
   </url><url>
-    <loc>//localhost:1313/authors/sam-wilson/</loc>
-  </url><url>
     <loc>//localhost:1313/sections/</loc>
-  </url><url>
-    <loc>//localhost:1313/authors/william-jacob/</loc>
   </url>
 </urlset>
