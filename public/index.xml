@@ -6,8 +6,15 @@
     <description>Recent content on BiotechData.Academy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Sep 2025 00:00:00 +0200</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Digital Lab</title>
+      <link>//localhost:1313/digitallab/</link>
+      <pubDate>Fri, 19 Sep 2025 00:00:00 +0200</pubDate>
+      <guid>//localhost:1313/digitallab/</guid>
+      <description>&lt;h1 id=&#34;digital-lab&#34;&gt;Digital Lab&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to the Digital Lab page of BiotechData.Academy.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to build an Application with modern Technology</title>
       <link>//localhost:1313/blog/post-1/</link>
