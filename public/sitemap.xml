@@ -62,8 +62,6 @@
     <loc>//localhost:1313/tags/technology/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/authors/</loc>
-  </url><url>
     <loc>//localhost:1313/about/</loc>
   </url><url>
     <loc>//localhost:1313/contact/</loc>
@@ -75,5 +73,7 @@
     <loc>//localhost:1313/privacy-policy/</loc>
   </url><url>
     <loc>//localhost:1313/sections/</loc>
+  </url><url>
+    <loc>//localhost:1313/authors/</loc>
   </url>
 </urlset>
