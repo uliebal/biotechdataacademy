@@ -12,7 +12,14 @@
       <link>//localhost:1313/authors/ulf-liebal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/authors/ulf-liebal/</guid>
-      <description>&lt;p&gt;lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Ulf loves to learn more about microorganisms and to code the knowledge into virtual cell models. His goal is to make data analysis easy, so that a data leads quickly to insight.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Yousra Harchoum</title>
+      <link>//localhost:1313/authors/yousra-harchoum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/authors/yousra-harchoum/</guid>
+      <description>&lt;p&gt;Yousra develops business plans, financial reports, and funding strategies, combining strategic analysis with practical cost and market insights.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

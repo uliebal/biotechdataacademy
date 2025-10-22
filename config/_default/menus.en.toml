@@ -11,6 +11,12 @@ name = "Digital Lab"
 url = "/DigitalLab"
 weight = 2
 
+[[main]]
+##parent = "Pages"
+name = "Team"
+url = "/authors"
+weight = 3
+
 #[[main]]
 #name = "About"
 #url = "/about"
@@ -34,12 +40,6 @@ weight = 2
 #parent = "Pages"
 #name = "Contact"
 #url = "/contact"
-
-#[[main]]
-##parent = "Pages"
-#name = "Team"
-#url = "/authors"
-#weight = 5
 
 #[[main]]
 #parent = "Pages"
