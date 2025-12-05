@@ -12,14 +12,21 @@ url = "/DigitalLab"
 weight = 2
 
 #[[main]]
+###parent = "Pages"
+#name = "Team"
+#url = "/authors"
+#weight = 3
+
+#[[main]]
 #name = "About"
 #url = "/about"
 #weight = 3
 
-#[[main]]
-#name = "Elements"
-#url = "/elements"
-#weight = 4
+[[main]]
+parent = "Tutorials"
+name = "Growth Quantification"
+url = "/Tutorials/Rates+Yields"
+weight = 4
 
 #[[main]]
 #weight = 4
@@ -34,12 +41,6 @@ weight = 2
 #parent = "Pages"
 #name = "Contact"
 #url = "/contact"
-
-#[[main]]
-##parent = "Pages"
-#name = "Team"
-#url = "/authors"
-#weight = 5
 
 #[[main]]
 #parent = "Pages"

@@ -1,20 +1,20 @@
 ---
 title: Dr.-Ing. Ulf Liebal
-email: Contact@biotechdata.academy
+email: ulf.liebal@biotechdata.academy
 image: "/images/Photo_Ulf.png"
 description: this is meta description
 social:
   - name: github
     icon: fa-brands fa-github
-    link: https://github.com
+    link: https://github.com/uliebal
 
-  - name: twitter
-    icon: fa-brands fa-twitter
-    link: https://twitter.com
+  # - name: twitter
+  #   icon: fa-brands fa-twitter
+  #   link: https://twitter.com
 
   - name: linkedin
     icon: fa-brands fa-linkedin
-    link: https://linkedin.com
+    link: https://www.linkedin.com/in/ulf-liebal-4151763/
 ---
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.
+Ulf loves to learn more about microorganisms and to code the knowledge into virtual cell models. His goal is to make data analysis easy, so that a data leads quickly to insight.

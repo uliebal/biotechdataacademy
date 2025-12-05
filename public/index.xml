@@ -6,8 +6,15 @@
     <description>Recent content on BiotechData.Academy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Sep 2025 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 05 Dec 2025 00:00:00 +0100</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microbial Growth Quantification</title>
+      <link>//localhost:1313/tutorials/rates&#43;yields/</link>
+      <pubDate>Fri, 05 Dec 2025 00:00:00 +0100</pubDate>
+      <guid>//localhost:1313/tutorials/rates&#43;yields/</guid>
+      <description>&lt;h1 id=&#34;calculations-of-substrate-and-production-rates-and-yields&#34;&gt;Calculations of Substrate and Production Rates and Yields&lt;/h1&gt;&#xA;&lt;p&gt;This workflow takes growth experiments with complementary substrate concentrations as input and calculates growth and substrate uptake rates. For multiple growth experiments, the user manually stores the rate results of single experiments in a separate standardized Excel sheet to analyze global yields and maintenance cost.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Digital Lab</title>
       <link>//localhost:1313/digitallab/</link>
@@ -48,7 +55,7 @@
       <link>//localhost:1313/authors/ulf-liebal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/authors/ulf-liebal/</guid>
-      <description>&lt;p&gt;lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Ulf loves to learn more about microorganisms and to code the knowledge into virtual cell models. His goal is to make data analysis easy, so that a data leads quickly to insight.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Elements</title>
@@ -77,6 +84,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid></guid>
       <description></description>
+    </item>
+    <item>
+      <title>Yousra Harchoum</title>
+      <link>//localhost:1313/authors/yousra-harchoum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/authors/yousra-harchoum/</guid>
+      <description>&lt;p&gt;Yousra develops business plans, financial reports, and funding strategies, combining strategic analysis with practical cost and market insights.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
