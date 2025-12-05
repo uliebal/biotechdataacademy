@@ -1,6 +1,6 @@
 ---
 title: Dr.-Ing. Ulf Liebal
-email: Contact@biotechdata.academy
+email: ulf.liebal@biotechdata.academy
 image: "/images/Photo_Ulf.png"
 description: this is meta description
 social:
