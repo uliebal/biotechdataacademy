@@ -13,7 +13,7 @@
       <link>//localhost:1313/tutorials/rates&#43;yields/</link>
       <pubDate>Fri, 05 Dec 2025 00:00:00 +0100</pubDate>
       <guid>//localhost:1313/tutorials/rates&#43;yields/</guid>
-      <description>&lt;h1 id=&#34;calculations-of-substrate-and-production-rates-and-yields&#34;&gt;Calculations of Substrate and Production Rates and Yields&lt;/h1&gt;&#xA;&lt;p&gt;This workflow takes growth experiments with complementary substrate concentrations as input and calculates growth and substrate uptake rates. For multiple growth experiments, the user manually stores the rate results of single experiments in a separate standardized Excel sheet to analyze global yields and maintenance cost.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;calculations-of-substrate-and-production-rates-and-yields&#34;&gt;Calculations of Substrate and Production Rates and Yields&lt;/h2&gt;&#xA;&lt;p&gt;This workflow takes growth experiments with complementary substrate concentrations as input and calculates growth and substrate uptake rates. For multiple growth experiments, the user manually stores the rate results of single experiments in a separate standardized Excel sheet to analyze global yields and maintenance cost.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Digital Lab</title>

@@ -4,7 +4,7 @@ date: 2025-12-05
 draft: false
 ---
 
-# Calculations of Substrate and Production Rates and Yields
+## Calculations of Substrate and Production Rates and Yields
 This workflow takes growth experiments with complementary substrate concentrations as input and calculates growth and substrate uptake rates. For multiple growth experiments, the user manually stores the rate results of single experiments in a separate standardized Excel sheet to analyze global yields and maintenance cost. 
 
 Additional resources:
