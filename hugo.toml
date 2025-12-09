@@ -94,7 +94,16 @@ startLevel = 2
 endLevel = 5
 ordered = true
 
-
+[markup.goldmark]
+[markup.goldmark.extensions]
+    [markup.goldmark.extensions.passthrough]
+    enable = true
+    [markup.goldmark.extensions.passthrough.delimiters]
+        block = [['\[', '\]'], ['$$', '$$']]
+        inline = [['\(', '\)']]
+[params]
+  math = true
+  
 ########################### Media types ###########################
 [mediaTypes]
 [mediaTypes."application/manifest+json"]
