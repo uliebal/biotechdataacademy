@@ -13,7 +13,7 @@
       <link>//localhost:1313/tutorials/rates&#43;yields/</link>
       <pubDate>Fri, 05 Dec 2025 00:00:00 +0100</pubDate>
       <guid>//localhost:1313/tutorials/rates&#43;yields/</guid>
-      <description>&lt;h1 id=&#34;calculations-of-substrate-and-production-rates-and-yields&#34;&gt;Calculations of Substrate and Production Rates and Yields&lt;/h1&gt;&#xA;&lt;p&gt;This workflow takes growth experiments with complementary substrate concentrations as input and calculates growth and substrate uptake rates. For multiple growth experiments, the user manually stores the rate results of single experiments in a separate standardized Excel sheet to analyze global yields and maintenance cost.&lt;/p&gt;</description>
+      <description>&lt;details class=&#34;table-of-content &#34;&gt;&#xA;  &lt;summary&gt;&#xA;    &#xA;      Table of Contents&#xA;    &#xA;  &lt;/summary&gt;&#xA;  &lt;nav id=&#34;TableOfContents&#34;&gt;&#xA;  &lt;ol&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#computational-preparations&#34;&gt;Computational preparations&lt;/a&gt;&#xA;      &lt;ol&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#python-packages&#34;&gt;Python packages&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#filesystem--parameters&#34;&gt;Filesystem &amp;amp; parameters&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#data-import&#34;&gt;Data import&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#data-selection&#34;&gt;Data selection&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ol&gt;&#xA;    &lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#growth-laws-and-substrate-uptake&#34;&gt;Growth Laws and Substrate Uptake&lt;/a&gt;&#xA;      &lt;ol&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#exponential-growth-law&#34;&gt;Exponential Growth Law&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#logistic-growthverhulst-equation&#34;&gt;Logistic Growth/Verhulst Equation&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#calculating-substrate-uptake-rate-and-yield&#34;&gt;Calculating Substrate Uptake Rate and Yield&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#growth-quantification-for-single-experiment&#34;&gt;Growth Quantification for Single Experiment&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ol&gt;&#xA;    &lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#experiment-integration-for-substrate-kinetics&#34;&gt;Experiment Integration for Substrate Kinetics&lt;/a&gt;&#xA;      &lt;ol&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#yield-and-ngam&#34;&gt;Yield and NGAM&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#enzyme-kinetics&#34;&gt;Enzyme Kinetics&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ol&gt;&#xA;    &lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#summary&#34;&gt;Summary&lt;/a&gt;&lt;/li&gt;&#xA;  &lt;/ol&gt;&#xA;&lt;/nav&gt;&#xA;&lt;/details&gt;&#xA;&#xA;&lt;!-- &#xA;####################################################&#xA;Introduction&#xA;####################################################&#xA; --&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Microorganisms growth by converting carbon substrates to biomass and side products. The conversion process during metabolism is unique for each organism and in each condition and leads to a range of growth rates and yields of biomass from substrate. For biotechnological purposes it is important to know the growth rates, biomass yields and side products in order to effectively plan  fermentations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Digital Lab</title>
@@ -84,13 +84,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid></guid>
       <description></description>
-    </item>
-    <item>
-      <title>Yousra Harchoum</title>
-      <link>//localhost:1313/authors/yousra-harchoum/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/authors/yousra-harchoum/</guid>
-      <description>&lt;p&gt;Yousra develops business plans, financial reports, and funding strategies, combining strategic analysis with practical cost and market insights.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

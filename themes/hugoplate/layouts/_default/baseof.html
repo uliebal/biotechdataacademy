@@ -14,6 +14,12 @@
     <!-- style (always cache it) -->
     {{ partialCached "essentials/style.html" . }}
 
+    <!-- math support -->
+    {{ if .Param "math" }}
+      {{ partialCached "math.html" . }}
+    {{ end }}
+
+
   </head>
 
   <body>
@@ -32,7 +38,6 @@
 
     <!-- announcement -->
     {{ partialCached "announcement.html" . }}
-
 
     <!-- header (don't cache it) -->
     {{ partial "essentials/header.html" . }}

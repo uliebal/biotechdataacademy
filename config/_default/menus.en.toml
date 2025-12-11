@@ -59,7 +59,7 @@ weight = 4
 #url = "/about"
 #weight = 1
 
-#[[footer]]
+#[[main]]
 #name = "Elements"
 #url = "/elements"
 #weight = 2

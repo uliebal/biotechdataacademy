@@ -19,3 +19,6 @@ https://jupyterbook.org
 
 overview static website generators
 https://jamstack.org/generators/
+
+Math visualization
+https://gohugo.io/content-management/mathematics/
