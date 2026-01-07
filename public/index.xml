@@ -9,6 +9,13 @@
     <lastBuildDate>Fri, 05 Dec 2025 00:00:00 +0100</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Carbon Balance Calculations and Gas Transfer Rates</title>
+      <link>//localhost:1313/tutorials/carbonbalance/</link>
+      <pubDate>Fri, 05 Dec 2025 00:00:00 +0100</pubDate>
+      <guid>//localhost:1313/tutorials/carbonbalance/</guid>
+      <description>&lt;details class=&#34;table-of-content &#34;&gt;&#xA;  &lt;summary&gt;&#xA;    &#xA;      Table of Contents&#xA;    &#xA;  &lt;/summary&gt;&#xA;  &lt;nav id=&#34;TableOfContents&#34;&gt;&#xA;  &lt;ol&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#computational-preparations&#34;&gt;Computational preparations&lt;/a&gt;&#xA;      &lt;ol&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#python-packages&#34;&gt;Python packages&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#filesystem--parameters&#34;&gt;Filesystem &amp;amp; parameters&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#data-import&#34;&gt;Data import&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#data-selection&#34;&gt;Data selection&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ol&gt;&#xA;    &lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#production-rates&#34;&gt;Production rates&lt;/a&gt;&#xA;      &lt;ol&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#growth-rate-and-substrate-uptake-rate&#34;&gt;Growth Rate and Substrate Uptake Rate&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ol&gt;&#xA;    &lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#side-product-quantification&#34;&gt;Side Product Quantification&lt;/a&gt;&lt;/li&gt;&#xA;  &lt;/ol&gt;&#xA;&lt;/nav&gt;&#xA;&lt;/details&gt;&#xA;&#xA;&lt;!-- &#xA;####################################################&#xA;Introduction&#xA;####################################################&#xA; --&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;During fermentation, microorganisms take up the substrate(s) for growth and generate side products. Fermentation control and engineering depends on the knowledge of the different carbon routes. To test our knowledge, we can determine whether the carbon balance is closed, i.e. that the carbon processed as substrate equals all products.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Microbial Growth Quantification</title>
       <link>//localhost:1313/tutorials/rates&#43;yields/</link>
       <pubDate>Fri, 05 Dec 2025 00:00:00 +0100</pubDate>

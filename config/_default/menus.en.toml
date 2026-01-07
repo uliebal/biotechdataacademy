@@ -28,6 +28,12 @@ name = "Growth Quantification"
 url = "/Tutorials/Rates+Yields"
 weight = 4
 
+[[main]]
+parent = "Tutorials"
+name = "Carbon Balance & Transfer Rates"
+url = "/Tutorials/CarbonBalance"
+weight = 5
+
 #[[main]]
 #weight = 4
 #name = "Pages"
