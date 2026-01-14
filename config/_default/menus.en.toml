@@ -30,7 +30,7 @@ weight = 4
 
 [[main]]
 parent = "Tutorials"
-name = "Carbon Balance & Transfer Rates"
+name = "Transfer Rates & Balances"
 url = "/Tutorials/CarbonBalance"
 weight = 5
 

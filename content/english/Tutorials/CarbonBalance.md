@@ -1,5 +1,5 @@
 ---
-title: "Carbon Balance Calculations and Gas Transfer Rates"
+title: "Gas Transfer Rates and Calculations on Carbon and Electron Balance"
 date: 2025-12-05
 draft: false
 
@@ -11,6 +11,11 @@ Introduction
 ####################################################
  -->
 ## Introduction
+Measuring gas transfer rates in fermentations provides detailed information on the metabolic status of the microorganisms. In many processes the availability of oxygen is an important factor for efficient productivity. The oxygen uptake rate determines the cell specific oxygen requirement (mmol(O\(_2)\)/gDW/h) and the oxygen transfer rate describes the volume specific exchange rate (mmol(O\(_2)\)/L/h). Similarly, the CO\(_2\) exchange is measured by the biomass specific carbon emission rate (CER, (mmol(CO\(_2)\)/gDW/h)) and the volume-based carbon transfer rate (CTR, (mmol(CO\(_2)\)/L/h)). The ratio of CTR over OTR is the respiratory quotient (RQ) and provides additional information. An overview to the strategy of respiration activity monitoring system (RAMOS) is provided by [Anderlei et al. (2004)](https://doi.org/10.1016/S1369-703X(03)00181-5).
+
+<!-- Figure Growth and Substrate Rates -->
+{{< figure src="/images/Tutorials/CarbonBalance/Anderlei_OTRCultivationScheme.jpg" caption="The oxygen transfer rate (OTR) can reveal different conditions of a fermentation ([Anderlei & Büchs, 2001](https://doi.org/10.1016/S1369-703X(00)00116-9))." numbered="true" width="800" position="center" command="fill" option="q100" class="img-fluid" webp="false" >}}
+
 During fermentation, microorganisms take up the substrate(s) for growth and generate side products. Fermentation control and engineering depends on the knowledge of the different carbon routes. To test our knowledge, we can determine whether the carbon balance is closed, i.e. that the carbon processed as substrate equals all products.
 
 To balance carbon fluxes, all metabolites with carbon need to be measured and their rates determined. This tutorial focuses on the steps when this information is available and used simulations from **BiotechData.Academy** to generate synthetic data. This data comes from a [*E. coli* core genome scale model](http://bigg.ucsd.edu/models/e_coli_core) with the substrate glucose. The original model was modified by a random collection of side products. 
@@ -141,11 +146,25 @@ df['Substrate'] = np.mean(df[SubstrateID].to_numpy(), axis=1)*SubstrateCorr
 ```
 {{< /accordion >}}
 
-<!-- 
-####################################################
-Calculations
-####################################################
- -->
+
+## Gas Transfer Rates
+
+### OTR & CTR
+
+There are different methods to measure the gas transfer rates, in the RAMOS strategy, the gas exchange is interrupted and the decline of the target gas in the gas space is measured.
+
+<!-- Figure OTR, CTR, RQ -->
+{{< figure src="/images/Tutorials/CarbonBalance/OTR+CTR+RQVsTime.png" caption="OTR, CTR and RQ for the example shakeflask cultivation. The OTR is a smooth bell-shape, thus, there is no other limitation except the carbon substrate." numbered="true" width="600" position="center" command="fill" option="q100" class="img-fluid" webp="false" >}}
+
+
+### Respiratory Quotient
+Information of the carbon and oxygen transfer rates can provide useful insight to a bioprocess. The ratio of carbon transfer over oxygen transfer is the respiratory quotient (RQ) and is equal to 1 if glucose is fully metabolized:
+$$
+C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O \\
+RQ = \frac{6CO_2}{6O_2} = 1 \frac{mmol(CO_2)}{mmol(O_2)}
+$$
+
+Different substrates will result in different RQ values when fully catabolized. If for glucose the measured RQ is 1, then the electrons end up almost entirely in CO\(_2\). If the RQ>1, then less O\(_2\) is required and reduced products are formed. If the RQ<1, then more O\(_2\) is required per CO\(_2\), which indicates that side producs are formed, that are more oxidized than glucose, high overflow metabolism, or higher maintenance requirements. The figure shows a reduced RQ for the example cultivation of about 0.85 mmol(CO\(_2\))/mmol(O\(_2\)). This indicates, that there are byproducts with a higher oxidation, presumably organic acids.
 
 ## Production rates
 
@@ -155,7 +174,7 @@ We use the example for which the growth quantification has been documented in th
 
 
 <!-- Figure Growth and Substrate Rates -->
-{{< figure src="/images/Tutorials/Rates+Yields_files/SubstrateRegression.png" caption="Linear relationship between biomass accumulation and substrate consumption. The slope (\(mmol/gDW\)) is multiplied with the growth rate (\(/h\)) and represents the substrate uptake rate (\(mmol/gDW/h\)) ." numbered="true" width="800" position="center" command="fill" option="q100" class="img-fluid" webp="false" >}}
+{{< figure src="/images/Tutorials/Rates+Yields_files/SubstrateRegression.png" caption="Linear relationship between biomass accumulation and substrate consumption. The slope (\(mmol/gDW\)) is multiplied with the growth rate (\(/h\)) and represents the substrate uptake rate (\(mmol/gDW/h\))." numbered="true" width="800" position="center" command="fill" option="q100" class="img-fluid" webp="false" >}}
 
 
 | | Growth Rate, /h | Substrate Uptake, mmol/gDW/h | Yield, gDW/gGlc|
@@ -199,20 +218,31 @@ plt.show()
 ```
 {{< /accordion >}}
 
-## Side Product Quantification
+### Side Product Quantification
 
 For the example growth quantification, the following additional side products are generated: \(\alpha\)-ketoglutarate (AKG), CO\(_2\), formate (For), pyruvate (Pyr) and succinate (Suc) with duplicate concentration measurements.
 
 The production rates for side products are calculated as the linear regression between the biomass accumulation and the product accumulation: 
  \[ C_{Met} = N(t) Y_{Met/Bm}\]
 
-with \( N(t)\) as the biomass and \(Y_{Met/Bm}\) the metabolite-biomass yield in mmol/gDW. Products that are produced at a constant rate will display a linear relationship in a plot of the product versus the Biomass with slope \(Y_{Met/Bm}\). The production rates are \(R_{Met} = Y_{Met/Bm} \cdot \mu\), the product of yield and the growth rate. 
+with \( N(t)\) as the biomass and \(Y_{Met/Bm}\) the metabolite-biomass yield in mmol/gDW. Products that are produced at a constant rate will display a linear relationship in a plot of the product versus the Biomass with slope \(Y_{Met/Bm}\). The production rates are \(R_{Met} = Y_{Met/Bm} \cdot \mu\), the product of yield and the growth rate. Of interest is also the conversion of the absolute biomass associated rate into a C-molar rate by multiplication with the carbon content:
+$$
+q_{Metabolite}\left[\frac{Cmmol}{gDW h}\right] = R_{Metabolite}\left[\frac{mmol}{gDW\cdot h}\right] C_{Metabolite} \left[\frac{Cmmol}{mmol}\right]
+$$
 
-<!-- Figure Excel Standard Single-->
+
+
+<!-- Figure Product Rate Regression-->
 {{< figure src="/images/Tutorials/CarbonBalance/SubProdVsTime+Regression.png" caption="The product concentrations are estimated based on the individual metabolite-biomass yields from the linear relationship." numbered="true" width="600">}}
 
 The rates of carbon flow to substrate, products and biomass needs to be balanced. To check this, the carbon associated rates are multiplied by the carbon content to get the carbon-molar rates (Cmmol/gDW/h).
 For *Biomass* the number of carbon for growth is calculated from the genome scale model biomass equation by summing up all carbon (42.6 C-mmol/gDW) and multiplication by the growth rate. The table below shows the respective values of carbon rates and is 1.3 Cmmol/gDW/h (~8%) of substrate is not balanced. This error is caused by random measurement noise and rounding.
+
+If the gas transmissions are in equilibrium, it is possible to correlate the CTR with the biomass specific carbon emission rate (CER) and the OUR with the biomass specific oxygen uptake rate (OUR). With the RQ (0.85 mmol(CO\(_2\))/mmol(O\(_2\))) and the absolute CER (5.7 mmol(CO\(_2\))/gDW/h):
+$$
+OUR = \frac{CER}{RQ} = \frac{ 5.7 \left[\frac{mmol(CO_2)}{gDW\cdot h}\right]}{0.85 \left[\frac{mmol(CO_2)}{mmol(O_2)}\right]} = 6.7 \left[\frac{mmol(O_2)}{gDW\cdot h}\right]
+$$
+
 
 {{< accordion "Biomass Equation" >}}
 The simulations use the *E. coli* core genome scale model [Orth et al., 2010](https://doi.org/10.1128/ecosalplus.10.2.1) with the following biomass composition. Summing the carbon content of the biomass components provides the biomass carbon content (42.6 Cmmol/gDW).
@@ -222,17 +252,6 @@ The simulations use the *E. coli* core genome scale model [Orth et al., 2010](ht
 | Stoichiometry | 1.496 | 3.7478 | 0.361 | 0.0709 | 0.129 | 0.205 | 0.2557 | 0.8232 | 1.7867 | 0.5191 | 2.8328 | 0.8977 | 1 | 
 | Carbon content| 3 | 2 | 4 | 6 | 3 | 6 | 5 | 5 | 4 | 3 | 3 | 5 | 42.6 |
 {{< /accordion >}}
-
-| Metabolite | Rate, mmol/gDW/h | Carbon | C-Rate, Cmmol/gDW/h |
-| ---- | ---- | ---- | ---- |
-| Glucose | -2.83 | 6 | -17 |
-| CO\(_2\) | 5.7 | 1 | 5.7 |
-| AKG | 0.16 | 5 | 0.8 |
-| For | 0.3 | 1 | 0.3 |
-| Pyr | 0.51 | 3 | 1.5 |
-| Suc | 0.08 | 4 | 0.02 |
-| Biomass | 0.17 | 42.6 | 7.2 |
-| Sum |  |  | -1.3 (7.6% error) |
 
 
 {{< accordion "Python Code" >}}
@@ -295,3 +314,36 @@ if Products:
     plt.show()
 ```
 {{< /accordion >}}
+
+## Electron Balance & Degree of Reduction
+Microbial fermentations must be balanced on the carbon and the electron fluxes. The electron distribution can be followed using the degree of reduction of the metabolites which designates the number of free electrons in a component normalized to 1 C-mol. The degree of reduction for a component is calculated by:
+$$
+C_aH_bO_cN_d\\[.3cm]
+\gamma = \frac{4a + b - 2c - 3d}{a}
+$$
+
+The electron balance is based on the equality of electrons from substrate and oxygen to biomass and products. This is calculated based on the degree of reduction (\(\gamma\)) multiplied with the C-molar based flux q (Cmmol/gDW/h):
+$$
+\gamma_{S}q_{S} + \gamma_{O_2}R_{O_2} = \gamma_{X}q_{X} + \sum_{i}\gamma_{P_i}q_{P_i}
+$$
+With degrees of reduction (\(\gamma\)), C-molar rates (q), or standard rate (R) for substrate (S), oxygen (O\(_2\)), Biomass (X), and Products (P\(_i\)). The degree of reduction for the biomass of the *E. coli* core model was determined based on the biomass equation. By rearranging the balance equation of the degrees of reduction, it is possible to determine the oxygen uptake rate (\(R_{O_2}\)):
+$$
+R_{O_2} = \frac{\gamma_{X}q_{X} + \sum_{i}\gamma_{P_i}q_{P_i} - \gamma_{S}q_{S}}{\gamma_{O_2}}
+$$
+Based on this equation, the requirement for the oxygen rate for full electron balance is 7.19 mmol/gDW/h, over 25% higher than the actual OUR.  
+
+| Metabolite | Formula | Rate, mmol/gDW/h (actual) | q, C-Rate, Cmmol/gDW/h | \(\gamma\) (\(e^-\)/Cmmol) | \(\gamma \cdot q\) (\(e^-\)/gDW/h) |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| Oxygen | O\(_2\) | 6.7&#x00B1;0.2 (6.2) | |  -4 | -26.8 |
+| CO\(_2\) | CO\(_2\) | 5.7&#x00B1;0.2 (5.8) | 5.7 | 0 | 0 |
+| Glucose | C\(_6\)H\(_{12}\)O\(_6\) | 2.8&#x00B1;0.1 (2.6) | 16.8 | 4 | 67.2 |
+| AKG | C\(_5\)H\(_6\)O\(_5\) | 0.16&#x00B1;0.01 (0.16) | 0.8 | 3.2 | 2.6 |
+| For | CH\(_2\)O\(_2\) | 0.3&#x00B1;0.01 (0.3) | 0.3 | 2 | 0.6 |
+| Pyr | C\(_3\)H\(_4\)O\(_3\) | 0.51&#x00B1;0.02 (0.47) | 1.5 | 3.33 | 5 |
+| Suc | C\(_4\)H\(_6\)O\(_4\) | 0.08&#x00B1;0.00 (0.08) | 0.02 | 3.5 | 0.07 |
+| Biomass | CH\(_{1.77}\)O\(_{0.49}\)N\(_{0.24}\) | 0.17&#x00B1;0.01 (0.16) | 7.2 | 4.07 | 29.3 |
+| Sum |  |  | 1.3 (7.6% error) |  | 2.8 (7% error) |
+
+
+## Summary
+Overall, the actual rates from the original simulation could be well estimated. The constant RQ shows that the metabolism is constant throughout the simulation and its lower value indicates the existence of organic acid byproducts. The carbon and electron balances calculation result in 7% imbalances that occur in data even when experimental noise is deactivated. The reason is that the growth rate is slightly overestimated, probably because the biomass estimation on the basis of the logistic growth equation with a maximum biomass capacity in the model does not optimally capture the decrease of growth rate due to substrate depletion.
