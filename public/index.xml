@@ -30,6 +30,13 @@
       <description></description>
     </item>
     <item>
+      <title>Flux Simulations with Genome Scale Models</title>
+      <link>//localhost:1313/tutorials/gsmmsims/</link>
+      <pubDate>Sun, 19 Jan 2025 00:00:00 +0100</pubDate>
+      <guid>//localhost:1313/tutorials/gsmmsims/</guid>
+      <description>&lt;details class=&#34;table-of-content &#34;&gt;&#xA;  &lt;summary&gt;&#xA;    &#xA;      Table of Contents&#xA;    &#xA;  &lt;/summary&gt;&#xA;  &lt;nav id=&#34;TableOfContents&#34;&gt;&#xA;  &lt;ol&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#computational-preparations&#34;&gt;Computational preparations&lt;/a&gt;&#xA;      &lt;ol&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#python-packages&#34;&gt;Python packages&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#filesystem--parameters&#34;&gt;Filesystem &amp;amp; parameters&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#data-import&#34;&gt;Data import&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#data-selection&#34;&gt;Data selection&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ol&gt;&#xA;    &lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#summary&#34;&gt;Summary&lt;/a&gt;&lt;/li&gt;&#xA;  &lt;/ol&gt;&#xA;&lt;/nav&gt;&#xA;&lt;/details&gt;&#xA;&#xA;&lt;!-- &#xA;####################################################&#xA;Introduction&#xA;####################################################&#xA; --&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Cells grow because the metabolic network converts substrates into energy and buildings blocks for new cells. The conversions takes place via stepwise modifications of the metabolites by the activity of enzymes. Graphically, metabolites are shown as vertices and reactions as connecting arrows. Subdivisions of the metabolic network yield metabolic pathways, which serve certain physiological requirements, like energy production via oxidative phosphorylation, carbon fixation or fatty acid synthesis (see figure below). Eventually, all components necessary for life, and not available from the environment, are synthesized in an organisms metabolic network.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>How to build an Application with modern Technology</title>
       <link>//localhost:1313/blog/post-1/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>

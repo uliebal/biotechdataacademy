@@ -34,6 +34,12 @@ name = "Transfer Rates & Balances"
 url = "/Tutorials/CarbonBalance"
 weight = 5
 
+[[main]]
+parent = "Tutorials"
+name = "Simulation of Metabolic Models"
+url = "/Tutorials/GSMMSims"
+weight = 6
+
 #[[main]]
 #weight = 4
 #name = "Pages"
